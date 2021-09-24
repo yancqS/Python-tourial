@@ -7,10 +7,10 @@
 
 
 class baidustockinfopipeline(object):
-    def open_spider(self,spider):
-        self.file = open('baudustock.txt', 'w')
+    def open_spider(self, spider):
+        self.file = open('baidustock.txt', 'w')
 
-    def close_spider(self,spider):
+    def close_spider(self, spider):
         self.file.close()
 
     def process_item(self, item, spider):

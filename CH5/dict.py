@@ -2,7 +2,7 @@
 alien_0 = {
     'color': 'yellow'
 }
-print(alien_0['color']) # yellow
+print(alien_0['color'])  # yellow
 
 # 添加键值对
 
