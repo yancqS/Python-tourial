@@ -256,7 +256,7 @@ This car has a 75-kwh battery
 将Car类单独放在一个文件`car.py`模块中
 
 ```python
-# car.py
+cars.py
 class Car:
     def __init__(self, make, model, year):
         self.make = make
@@ -284,7 +284,7 @@ class Car:
 然后在另外一个文件`my_car.py`中，在其中导入`Car`类并创建其实例：
 
 ```python
-# my_car.py
+myCar.py
 from car import Car
 
 my_new_car = Car('audi', 'a4', 2019)
@@ -308,7 +308,7 @@ This car has 50 miles on it
 把`E_car`类和`Battery`类都放到`car.py`中,然后在`my_car.py`中把这些类导入：
 
 ```python
-# my_car.py
+myCar.py
 from car import Car, E_car
 
 my_new_car = Car('audi', 'a4', 2019)
