@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import bs4
+
 print("<========================生源质量排名========================>")
 num = int(input('查看大学排名:'))
 
@@ -30,12 +31,12 @@ def printunivlist(ulist, num):
         print('{0:^10}\t{1:{4}^8}\t{2:^20}\t{3:^5}'.format(u[0], u[1], u[2], u[3], chr(12288)))
 
 
-def main(num):
+def main(num_th):
     uinfo = []
     url = 'http://www.zuihaodaxue.cn/shengyuanzhiliangpaiming2019.html'
     html = gethtmltext(url)
     fillunivlist(uinfo, html)
-    printunivlist(uinfo, num)
+    printunivlist(uinfo, num_th)
 
 
 main(num)

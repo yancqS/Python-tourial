@@ -40,12 +40,12 @@ def printgoodslist(ilr):
     print('success write in files')
 
 
-def main(goods, num):
-    start_url = 'https://s.taobao.com/search?q=' + goods
+def main(goods_name, num_th):
+    start_url = 'https://s.taobao.com/search?q=' + goods_name
     infolist = []
-    for i in range(num):
+    for i in range(num_th):
         try:
-            url = start_url + '&s=' + str(44*i)
+            url = start_url + '&s=' + str(44 * i)
             html = gethtmltext(url)
             parserpage(infolist, html)
         except:

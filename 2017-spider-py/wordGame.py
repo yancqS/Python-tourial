@@ -1,7 +1,7 @@
 import random
 print('<---------------Word Game--------------->')
 num = 30
-guess = random.randint(0,500)
+guess = random.randint(0, 500)
 while num > 0:
     temp = input('猜猜我心里想的数字(0-500):')  # input 返回字符串类型的变量
     if guess == int(temp):
