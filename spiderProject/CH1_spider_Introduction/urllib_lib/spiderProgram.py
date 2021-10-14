@@ -1,3 +1,5 @@
+# urllib 是Python自带的标准库 无需安装
+
 from urllib.request import urlopen
 
 url = "http://www.baidu.com"
