@@ -19,7 +19,7 @@ try:
     # print(r.url)
     r.raise_for_status()
     # print(r.headers)  # 访问服务器返回给我们的响应头部信息
-    # print(r.request.headers)  # 得到发送到服务器的请求的头部
+    # print(r.request.headers)  # 发送到服务器的请求的头部
     r.encoding = r.apparent_encoding
     with open('res.json', mode='w', encoding='utf-8') as f:
         f.write(json.dumps(r.json(), ensure_ascii=False, indent=4))
